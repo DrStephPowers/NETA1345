@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delicious homemade chocolate chip cookies recipe with step-by-step instructions. Perfect for beginners and cookie lovers!">
+    <title>Chocolate Chip</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        
+        h1 {color:#3C27F5;}
+        #pic {width: 100%; height: 250px;   background-position: center;}
+        
+        .nav {display: flex; justify-content: center;}
+        .nav nav {display: flex; justify-content: space-evenly;}
+        .nav nav a {text-decoration: none; padding: 10px;}
+
+        .ingred { list-style: none; padding-left: 0;}
+        .ingred li {padding-left: 30px; position: relative; margin-bottom: 8px;}
+        .ingred li::before {content: "🔥"; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+            position: absolute; left: 0; top: 2px; font-size: 18px;}
+
+        table, th { border-collapse: collapse; border-radius: 10px; width: 60%;
+            overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); } 
+        table thead { background: linear-gradient(135deg, #667eea, #764ba2); color: white; } 
+        table tbody tr:hover { background-color: #e3f2fd; transform: scale(1.02); }
+      
+        #instruct { list-style: none; counter-reset: item; padding-left: 0; }
+        #instruct li { counter-increment: item; counter-increment: item; position: relative;
+            padding-left: 50px;}
+        #instruct li::before { content: counter(item); background: #3498db; 
+            color: white; border-radius: 50%; position: absolute; left: 0;
+            top: 2px; width: 30px; height: 30px; display: flex; align-items: center;
+            justify-content: center; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Perfect Chocolate Chip Cookies</h1>
+        <details>
+  	        <summary>Cookie Recipe </summary>
+ 	        <p>This recipe is Grandma's original cookie recipe</p>
+        </details>
+        <p></p>
+        <figure>
+            <img id="pic" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500&h=350&fit=crop" 
+                alt="Freshly baked chocolate chip cookies on a cooling rack" 
+                width="500" height="350">
+            <figcaption>
+                Fig1. - Cookie.
+            </figcaption>
+        </figure>
+        <div class="nav">
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <p><strong>These classic chocolate chip cookies</strong> are the perfect combination of <em>crispy edges</em> and <em>chewy centers</em>. Made with <mark>real butter</mark> and <mark>premium chocolate chips</mark>, this time-tested recipe will become your go-to favorite. Whether you're baking for a special occasion or just treating yourself, these cookies deliver that perfect <strong>homemade taste</strong> that brings back childhood memories.</p>
+
+        <section>
+            <h2>Ingredients</h2>
+            <ul class="ingred">
+                <li><strong>2¼ cups</strong> all-purpose flour</li>
+                <li><strong>1 tsp</strong> baking soda</li>
+                <li><strong>1 tsp</strong> salt</li>
+                <li><strong>1 cup</strong> (2 sticks) butter, softened</li>
+                <li><strong>¾ cup</strong> granulated sugar</li>
+                <li><strong>¾ cup</strong> packed brown sugar</li>
+                <li><strong>2 large</strong> eggs</li>
+                <li><strong>2 tsp</strong> vanilla extract</li>
+                <li><strong>2 cups</strong> chocolate chips</li>
+                <li><strong>1 cup</strong> chopped walnuts (optional)</li>
+            </ul>
+            <p><a href="https://www.amazon.com/s?k=baking+ingredients+chocolate+chips" 
+               target="_blank" 
+               rel="noopener">Buy Ingredients Online at Amazon</a></p>
+        </section>
+
+        <section>
+            <h2>Cooking Information</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Detail</th>
+                        <th>Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Prep Time</strong></td>
+                        <td>15 minutes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bake Time</strong></td>
+                        <td>9-11 minutes per batch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Time</strong></td>
+                        <td>45 minutes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Servings</strong></td>
+                        <td>48 cookies</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Difficulty</strong></td>
+                        <td>Easy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Oven Temperature</strong></td>
+                        <td><strong>375°F (190°C)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Instructions</h2>
+            <ul id="instruct">
+                <li>Preheat your oven to <strong>375°F (190°C)</strong>. Line baking sheets with parchment paper.</li>
+                <li>In a medium bowl, whisk together <mark>flour, baking soda, and salt</mark>. Set aside.</li>
+                <li>In a large bowl, <strong>cream together</strong> the softened butter and both sugars until light and fluffy (about 2-3 minutes with an electric mixer).</li>
+                <li>Beat in <em>eggs one at a time</em>, then add the <strong>vanilla extract</strong>. Mix until well combined.</li>
+                <li><u>Gradually blend in</u> the flour mixture until just combined. Don't overmix!</li>
+                <li>Stir in the <mark>chocolate chips</mark> and nuts (if using) by hand with a wooden spoon.</li>
+                <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about <strong>2 inches apart</strong>.</li>
+                <li>Bake for <strong>9-11 minutes</strong> or until the edges are <em>golden brown</em> but centers still look slightly underbaked.</li>
+                <li><u>Cool on baking sheet for 2 minutes</u> before transferring to a wire rack to cool completely.</li>
+                <li><strong>Enjoy!</strong> Store in an airtight container for up to one week.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p><em>Happy Baking! These cookies are best enjoyed fresh from the oven with a tall glass of cold milk.</em></p>
+        <p><small>Recipe created by Recipe Master | © 2025</small></p>
+
+        <address>
+            <a href="mailto:john@example.com">John Doe</a><br>
+            123 Main Street<br>
+            City, State 12345
+        </address>
+    </footer>
+</body>
+</html>
