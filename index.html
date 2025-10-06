@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website about computer programming">
+    <meta name="author" content="Stephanie Powers">
+    <title> My Portfolio </title>
+</head>    
+<body>
+    <h1> About Me </h1><h2> About Me </h2><h3> About Me </h3>
+    <h4> About Me </h4>
+    
+    <h5> About Me </h5>
+    <h6> About Me </h6>
+    <p> I am currently taking a course in programming. </p>
+    <hr>
+    <dl>
+        <dt>How do I reset my password?</dt>
+        <dd>Click the "Forgot Password" link on the login page and follow the instructions sent to your email.</dd>
+    </dl>
+    <p></p>
+
+    <p>Here is a bunch of text. Followed by a quote.
+    <blockquote cite="https://example.com"> This is a longer quote that will be displayed as a separate block. </blockquote>
+    The material continues after the block quote.</p>
+
+    <p>I just finished reading <cite>To Kill a Mockingbird</cite>.</p>
+
+    <p>As Shakespeare wrote, <q>To be or not to be, that is the question.</q></p>
+
+
+    <form action="/submit" method="POST"> 
+        <label> Username:
+            <input type="text" name="username">
+        </label> 
+        <p></p>
+
+        <label>Password:
+            <input type="password" name="password">
+        </label>
+        <p></p>
+
+        <fieldset> 
+        <legend>Preferred Contact Method:</legend> 
+        <label> 
+            <input type="radio" name="contact" value="email">
+            Email
+        </label> 
+        <label> 
+            <input type="radio" name="contact" value="phone">
+            Phone
+        </label> 
+        <label> 
+            <input type="radio" name="contact" value="fax">
+            Fax
+        </label> 
+        <label> 
+            <input type="radio" name="contact" value="text">
+            Text
+        </label> 
+        </fieldset>
+        <p></p>
+
+        <fieldset>
+       	<legend>Preferred Contact Method:</legend>
+       	<label>
+          		 <input type="checkbox" name="contact" value="email">
+          		 Email
+       	</label>
+      	<label>
+           		<input type="checkbox" name="contact" value="phone">
+           		Phone
+      	</label>
+       	<label>
+           		<input type="checkbox" name="contact" value="fax">
+           		Fax
+      	 </label>
+      	 <label>
+           		<input type="checkbox" name="contact" value="text">
+          		 Text
+       	</label>
+        </fieldset>
+        <p></p>
+
+        <label for=“country”> 
+            Country:
+        </label> 
+        <select id="country" name="country"> 
+            <option value="">Choose a country...</option> 
+            <option value="us">United States</option> 
+            <option value="ca">Canada</option> 
+            <option value="uk">United Kingdom</option> 
+        </select>
+        <p></p>
+
+        <label for="message">
+            Message:
+        </label> 
+        <textarea id="message" name="message" rows="4" cols="50">
+        </textarea>
+        <p></p>
+
+        <label>
+            Name: 
+            <input type="text" placeholder="Enter your name" required maxlength="50"> 
+        </label>
+        <p></p>
+
+        <label>
+            Email Address:
+            <input type="email" placeholder="email@example.com" required>
+        </label>
+        <p></p>
+
+        <label>
+        Postal Code
+        <input type="text" 
+            pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" 
+            placeholder="A1A 1A1"
+            title="Format: A1A 1A1">
+        </label>
+        <p></p>
+
+         <label>
+            Subtotal:
+            <input type="text" value="$25.00" readonly>
+        </label>
+        <p></p>
+
+        <fieldset>
+   		<legend>Shipping Information</legend>
+    
+    	<label>
+            <input type="checkbox" id="same-as-billing" checked> 
+     		Same as billing address
+   		 </label>
+        <p></p>
+         <!-- These are disabled when checkbox is checked -->
+    	<label>
+            Name:
+   		    <input type="text" 
+           	name="shipping_name" 
+           	disabled>
+        </label>
+         <p></p>
+
+    	<label>
+            Address:
+    	    <input type="text"  
+          	name="shipping_address" 
+           	disabled>
+        </label>
+  	    </fieldset>
+    </form>
+
+    <p></p>
+    <form action="/upload-image" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Upload Profile Picture</legend>
+    
+        <label for="profile-pic">Profile Picture:</label>
+        <input type="file" 
+            id="profile-pic" 
+            name="profile_picture" 
+            accept="image/jpeg,image/png,image/gif"
+            required>
+        
+        <small>Max file size: 5MB. Accepted formats: JPG, PNG, GIF</small>
+        </fieldset>
+        <p></p>
+
+        <button type="submit" formaction="/login">
+            Log In
+        </button> 
+
+        <button type="submit" formaction="/register">
+            Register
+        </button>
+    </form>
+
+</body>
+</html>
